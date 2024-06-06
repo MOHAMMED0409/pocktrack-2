@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Employee Form</h1>
+<form action="{{ url_for('search_employee') }}" method="post">
+    <label for="emp_number">Employee Number</label>
+    <input type="text" id="emp_number" name="emp_number" required>
+    <button type="submit">Search</button>
+</form>
+{% endblock %}
